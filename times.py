@@ -7,7 +7,7 @@ import datetime
 
 times_bp = Blueprint('times', __name__)
 
-client = MongoClient('mongodb://test:test@localhost',27017)
+client = MongoClient('localhost', 27017)
 db = client.jranking
 
 @times_bp.route('/time', methods=['POST', 'GET'])

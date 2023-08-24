@@ -6,7 +6,7 @@ from flask_jwt_extended import (
 
 auth_bp = Blueprint('auth', __name__)
 
-client = MongoClient('mongodb://test:test@localhost',27017)
+client = MongoClient('localhost', 27017)
 db = client.jranking
     
 # 로그인 기능 구현
